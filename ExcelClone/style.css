@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     overflow: hidden;
@@ -105,21 +106,46 @@ body{
     height: 30px;
     width: calc(100vw - 30px);
     border: 1px solid lightgray;
+    display: flex;
 
+}
+
+.column-name {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    font-weight: bold;
 }
 .row-name-container {
     width: 30px;
     height: calc(75vh - 30px);
     border: 1px solid lightgray;
+    overflow: hidden;
 
+}
+.row-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
 }
 .input-cell-container {
-    width: calc(100vw - 30px);
+    width:  calc(100vw - 30px);
     height: calc(75vh - 30px);
     border: 1px solid lightgray;
-
 }
-
+.cell-row {
+    display: flex;
+}
+.input-cell {
+    min-width: 100px;
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
 /*-----------SHEET BAR CONTAINER -------------------****************/
 /*-----------------------------------------------------------**/
 .sheet-bar{
