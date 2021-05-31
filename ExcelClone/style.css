@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    font-size: 14;
+}
+*{
+    box-sizing: border-box;  /*--- Jo bh padding or boreder width h v internall count hogi*/
+}
+
+/*-----------MAIN CONTAINER -------------------****************/
+/*-----------------------------------------------------------**/
+.container {
+    height: 100vh;
+}
+
+/*-----------TITLE CONTAINER -------------------****************/
+/*-----------------------------------------------------------**/
+.title-bar{
+    height: 5vh;
+    background-color: #107C41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*-----------MENU CONTAINER -------------------****************/
+/*-----------------------------------------------------------**/
+.menu-bar{
+    height: 5vh;
+    background-color: #107C41;
+    display: flex;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.selected {
+    background-color: white;
+    color: #107C41;
+}
+.menu-item:hover{
+    background-color: #10532e;
+    cursor: pointer;
+}
+.menu-item.selected:hover{
+    background-color: white;
+    cursor: default;
+}
+
+/*-----------MENU ICON CONTAINER -------------------****************/
+/*-----------------------------------------------------------**/
+.menu-icon-bar{
+    height: 6vh;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+}
+.menu-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu-icon:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.selector{
+    height: 30px;
+    font-size: 18px;
+}
+
+.font-family-selector {
+    width: 150px;
+}
+
+/*-----------FORMULA CONTAINER -------------------****************/
+/*-----------------------------------------------------------**/
+.formula-bar {
+    height: 5vh;
+}
+
+/*-----------DATA CONTAINER -------------------****************/
+/*-----------------------------------------------------------**/
+.data-container {
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.select-all{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+.column-name-container {
+    height: 30px;
+    width: calc(100vw - 30px);
+    border: 1px solid lightgray;
+
+}
+.row-name-container {
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+
+}
+.input-cell-container {
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+
+}
+
+/*-----------SHEET BAR CONTAINER -------------------****************/
+/*-----------------------------------------------------------**/
+.sheet-bar{
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+.scroller {
+    width: 70px;
+}
+.icon-left-scroll , .icon-right-scroll {
+    font-size: 30px;
+}
+.icon-left-scroll:hover , .icon-right-scroll:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+.icon-add {
+    color: #107C41;
+    width: 40px;
+}
+.icon-add:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.sheet-tab-container {
+    border: 1px solid lightgray;
+    width: calc(100vw - 110px);
+}
+.sheet-tab {
+    border-bottom: 4px solid #107C41;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+}
+.sheet-tab:hover{
+
+}
