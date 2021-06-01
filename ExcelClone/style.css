@@ -4,6 +4,7 @@ body{
     overflow: hidden;
     font-size: 14;
 }
+
 *{
     box-sizing: border-box;  /*--- Jo bh padding or boreder width h v internall count hogi*/
 }
@@ -83,11 +84,43 @@ body{
 .font-family-selector {
     width: 150px;
 }
+.menu-icon.selected {
+    background-color: lightgray;
+}
 
 /*-----------FORMULA CONTAINER -------------------****************/
 /*-----------------------------------------------------------**/
 .formula-bar {
     height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.formula-editor{
+    height: 70%;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+    align-items: center;
+
+}
+.selected-cell {
+    width: 120px;
+}
+.function-sign{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formula-input {
+    width: calc(100vw - 160px);
+    outline-color: #107C41;
 }
 
 /*-----------DATA CONTAINER -------------------****************/
@@ -145,6 +178,10 @@ body{
     min-height: 25px;
     border-bottom: 1px solid lightgray;
     border-right: 1px solid lightgray;
+    outline-color: #107C41;
+}
+.input-cell.selected {
+    border: 2px solid #107C41;
 }
 /*-----------SHEET BAR CONTAINER -------------------****************/
 /*-----------------------------------------------------------**/
