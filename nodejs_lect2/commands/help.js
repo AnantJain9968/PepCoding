@@ -9,5 +9,6 @@ function helpFn(){
 }
 
 module.exports={
-    helpKey : helpFn
+    helpKey : helpFn,
+    num:1
 }

@@ -24,6 +24,7 @@ switch(command){
         break;
     case "help":
        // helpFn()
+       console.log(helpObj.num);
        helpObj.helpKey();
         break;
     default:
