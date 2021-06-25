@@ -140,7 +140,7 @@ body{
     width: calc(100vw - 30px);
     border: 1px solid lightgray;
     display: flex;
-
+    overflow: hidden;
 }
 
 .column-name {
@@ -166,6 +166,7 @@ body{
     border-bottom: 1px solid lightgray;
 }
 .input-cell-container {
+    overflow: scroll;
     width:  calc(100vw - 30px);
     height: calc(75vh - 30px);
     border: 1px solid lightgray;
@@ -182,6 +183,21 @@ body{
 }
 .input-cell.selected {
     border: 2px solid #107C41;
+}
+/* agar mera top selceted h to mai khud pe lgaunga top-selected or uske upar lagaunga bottom selected */
+
+.input-cell.top-cell-selected{
+    border-top:none;
+}
+.input-cell.bottom-cell-selected{
+    border-bottom:1px solid lightgray;
+}
+/* agar mera left selceted h to mai khud pe lgaunga left-selected or uske upar lagaunga right selected */
+.input-cell.left-cell-selected{
+    border-left:none; 
+}
+.input-cell.right-cell-selected{
+    border-right:1px solid lightgray;
 }
 /*-----------SHEET BAR CONTAINER -------------------****************/
 /*-----------------------------------------------------------**/
